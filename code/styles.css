@@ -1,0 +1,256 @@
+.navi {
+    display: block;
+    background-color: rgba(45, 45, 45, 0.1);
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    top: 0;
+    position: sticky;
+    box-shadow: 10px 5px 5px rgba(128, 121, 121, 0.19);
+    border-radius: 0px;
+    border-bottom: 1px solid rgb(219, 209, 209);
+    border-right: 1px solid rgb(219, 209, 209);
+    border-left: 1px solid rgb(219, 209, 209);
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-width: thin;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgba(45, 45, 45, 0.1);
+    overflow: hidden;
+}
+
+.horizontal-li {
+    display: inline-block;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#bttn:hover {
+    background-image: none;
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.1);
+}
+
+.search-bar button:hover {
+    background-image: none;
+    background-color: #ccc;
+}
+
+.btton-width {
+    margin-top: 0em;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.search-bar {
+    width: 20%;
+    float: right;
+    border: none;
+    margin-top: 3px;
+    margin-right: 90px;
+    padding-top: 6px;
+}
+
+.search-bar input[type=text] {
+    padding: 6px;
+    margin-top: 1px;
+    font-size: 17px;
+    border: none;
+}
+
+#bttn {
+    background-color: transparent;
+    border: none;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images at start */
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    display: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+img {
+    width: 1000px;
+    border: thin;
+    height: 350px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-top: 20px;
+    box-shadow: 10px 5px 5px rgba(128, 121, 121, 0.19);
+}
+
+/* More Page CSS */
+
+#flex-container {
+    display: flex;
+}
+
+#feedback {
+    background-color: #f2f2f2;
+    display: block;
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+    border: thin;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 10px 5px 5px rgba(128, 121, 121, 0.19);
+}
+
+#feedback:hover {
+    box-shadow: 10px 5px 5px rgba(46, 43, 43, 0.19);
+}
+
+textarea {
+    height: 300px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#feedback-submit {
+    padding: 3px;
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #4CAF50;
+}
+
+#feedback-submit:hover{
+    background-color: #45a049;
+}

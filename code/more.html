@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <!-- Navigation Bar -->
+    <div class="navi">
+        <a class="horizontal-li" id="bttn" class="round btton-width" onclick="pageShift('index')" type="button">Home</a>
+        <a class="horizontal-li" id="bttn" class="round btton-width" type="button">About</a>
+        <a class="horizontal-li" id="bttn" class="round btton-width" onclick="pageShift('more')" type="button">More</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search.." name="search">
+        </div>
+    </div>
+    <div id="flex-container">
+        <div id="feedback">
+            <form>
+                <label> First Name </label>
+                <input id="firstName" type="text" placeholder="Enter your firstname.. " value="">
+                <label> Last Name </label>
+                <input id="lastName" type="text" placeholder="Enter your lastname.. " value="">
+                <label>Feedback</label>
+                <input id="feedBack" type="text" placeholder="Write Something..." value="">
+                <input id="feedback-submit" type="submit" onclick="collectInfo()">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
